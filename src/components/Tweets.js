@@ -37,12 +37,13 @@ const Tweets = () => {
 
 const Wrapper = styled.div `
   background: #f60051ad;  
-  max-width:420px;
+  max-width:500px;
   height: 500px;
   padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
   margin-top: 20px;
+  box-shadow: 0 2px 4px #d3d3d3;
   &::-webkit-scrollbar {
     width: 6px;
 }
