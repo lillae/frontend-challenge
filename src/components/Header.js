@@ -38,13 +38,12 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 background:white;
-
-box-shadow: 0 2px 4px rgba(100, 100, 100, 0.5);
+box-shadow: 0 2px 4px #d3d3d3;
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width:1020px;
+    max-width:1024px;
     width:100%;
     margin:0px auto;
     padding: 0px 20px;

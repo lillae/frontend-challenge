@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Todos from '../components/Todos';
 import Campaigns from '../components/Campaigns';
+import Tweets from '../components/Tweets';
 
 
 const Home = () => {
@@ -15,14 +16,15 @@ const Home = () => {
                 <Campaigns />
                 <Todos/>
             </Wrapper>
-
+            <h2>Latest Tweets</h2>
+            <Tweets/>
         </StyledHome>
     );
 }
 
 const StyledHome = styled.div ` 
-max-width:1020px;
-height: 100vh;
+max-width:1024px;
+height: 100%;
 padding:50px 20px;
 margin:0px auto;
 
@@ -30,11 +32,7 @@ margin:0px auto;
     display:flex;
     align-items: center;
     margin-bottom: 22px;
-    h2 {
-        font-size: 1.125rem;
-        margin: 0px 10px 0px 0px;
-        color: var(--darkGrey);
-    }
+    
     button {
         color: white;
         background: var(--pink);
@@ -46,15 +44,12 @@ margin:0px auto;
         border-radius: 2px;
         
     }
-    & > * {
-        text-transform: uppercase;
-    }
-    
 }
 `
 const Wrapper = styled.div `
 display: flex;
 width:100%;
+height: 812px;
 `
 
 

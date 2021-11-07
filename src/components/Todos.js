@@ -25,7 +25,7 @@ background: #d3d3d3;
 max-width: 319px;
 padding:10px;
 width:100%;
-max-height: 700px;
+max-height: 668px;
 overflow-y: auto;
 overflow-x: hidden;
 display:flex;

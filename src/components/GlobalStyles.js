@@ -29,6 +29,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h2 {
+        font-size: 1.125rem;
+        margin: 0px 10px 0px 0px;
+        color: var(--darkGrey);
+        text-transform: uppercase;
+    }
+
 h3 {
     font-weight: 300;
     color: var(--darkGrey);
@@ -48,6 +55,7 @@ li {
 button {
     cursor: pointer;
     font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
 }
 
 `

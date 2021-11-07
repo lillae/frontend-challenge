@@ -79,8 +79,8 @@ padding: 0px 0px 10px;
     font-size:0.75rem;
     font-weight: 400px;
     padding: 16px;
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     background: var(--cardHeader);
     span {
         color:var(--pink);
@@ -151,8 +151,8 @@ padding: 0px 0px 10px;
     display: flex;
     align-items: center;
     padding: 0px 20px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 button {
         color: var(--pink);

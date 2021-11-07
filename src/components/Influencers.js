@@ -47,11 +47,15 @@ width:100%;
 
 const Card = styled.div `
 max-width:300px;
-height: 354px;
+height: 100%;
 max-height: 370px;
 background: white;
+display:flex;
+flex-direction: column;
+justify-content:center;
 & > * {
 height:70.8px;
+width:100%;
 border-bottom: 1px solid var(--lightestGrey);
 display:flex;
 align-items:center;
