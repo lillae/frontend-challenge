@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import camp1 from '../img/camp1.svg';
 import camp2 from '../img/camp2.svg';
 import notification from '../img/notification.svg';
-
+import miniNotification from '../img/miniNotification.svg';
+import pinkInsta from '../img/pinkinsta.svg';
 
 
 const CampaignsCard = () => {
@@ -13,6 +14,10 @@ const CampaignsCard = () => {
             <div className="images">
             <img className="picture" src={camp1} alt="nike shoes" />
             <img className="notification" src={notification} alt="notification icon" />
+            <div className="mini-icons">
+                <img src={miniNotification} alt="notification" />
+                <img src={pinkInsta} alt="insta" />
+            </div>
             </div>
             <div className="content">
             <div className='details'>
@@ -34,7 +39,12 @@ const CampaignsCard = () => {
             </div>
            </StyledCard>
            <StyledCard>
-            <img src={camp2} alt="Yoga" />
+            <div className="images">
+                <img src={camp2} alt="Yoga" />
+                <div className="mini-icons insta">
+                    <img className="instaMini" src={pinkInsta} alt="insta" />
+                </div>
+                </div>
             <div className="content">
             <div className='details'>
                 <div className='active'>
@@ -83,6 +93,26 @@ img {
         position:absolute;
         right:-10px;
         top:14px;
+    }
+    .mini-icons {
+        background:white;
+        width:30px;
+        padding:3px;
+        position: absolute;
+        bottom:10px;
+        display: flex;
+        justify-content:center;
+        & > * {
+            margin-right:2px;
+        }
+
+    }
+    .insta {
+        width:15px;
+        bottom: 15px;
+        .instaMini{
+            margin-left:2px;
+        }
     }
 
 }
