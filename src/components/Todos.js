@@ -30,6 +30,7 @@ overflow-y: auto;
 overflow-x: hidden;
 display:flex;
 justify-content: center;
+margin-bottom:20px;
 &::-webkit-scrollbar {
     width: 6px;
 }
@@ -43,6 +44,12 @@ justify-content: center;
     border-radius: 10px;
     height: 50%;
     background: #a6a6a6;
+}
+@media (max-width:830px) {
+    max-width:100%;
+}
+@media (min-width:768px) and (orientation:portrait) {
+    max-width:620px;
 }
 
 `

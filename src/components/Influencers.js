@@ -53,6 +53,7 @@ background: white;
 display:flex;
 flex-direction: column;
 justify-content:center;
+box-shadow: 0 2px 4px #d3d3d3;
 & > * {
 height:70.8px;
 width:100%;
@@ -82,6 +83,9 @@ button {
     font-size: 0.625rem;
     font-weight: bold;
     border: 1px solid var(--lightestGrey);
+}
+@media (max-width:830px) {
+    max-width:100%;
 }
 `
 

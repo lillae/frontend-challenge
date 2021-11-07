@@ -23,7 +23,7 @@ const Campaigns = () => {
 const Wrapper = styled.div ` 
 display: flex;
 flex-direction: column;
-margin-right: 20px;
+margin-right: 10px;
 width:100%;
 
 `
@@ -35,6 +35,14 @@ margin: 0px 0px 20px;
 const Container = styled.div `
 display:flex;
 width:100%;
+@media (max-width:830px) {
+    height: 100%;
+    flex-direction:column;
+}
+@media (min-width:768px) and (orientation:portrait) {
+    max-width:620px;
+}
+
 `
 
 

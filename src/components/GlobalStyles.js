@@ -34,13 +34,26 @@ h2 {
         margin: 0px 10px 0px 0px;
         color: var(--darkGrey);
         text-transform: uppercase;
+        @media (max-width:830px) {
+         font-size:1rem;
     }
+        
+    }
+
+.tweets-heading {
+    @media (max-width:830px) {
+         margin-top: 25px;
+    }
+}
 
 h3 {
     font-weight: 300;
     color: var(--darkGrey);
     font-size: 1rem;
     margin-bottom:10px;
+    @media (max-width:830px) {
+    margin-top: 25px;
+}
 
 }
 

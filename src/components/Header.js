@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import mail from '../img/mail.png';
 import arrow from '../img/arrow-down-sign-to-navigate.png';
 import blackCircle from '../img/blackIcon.svg';
+import { GoThreeBars } from "react-icons/go";
 
 const Header = () => {
     return (
@@ -22,9 +23,10 @@ const Header = () => {
                 </div>
                 <div className = "profile">
                     <img className="mail" src={mail} alt="mail icon" />
-                    <img src={blackCircle} alt="black circle icon" />
+                    <img className="circle" src={blackCircle} alt="black circle icon" />
                     <button>My Profile <img src={arrow} alt="arrow down" /></button>
                 </div>
+                <GoThreeBars className='icon' />
             </nav>
         </StyledHeader>
     );
@@ -46,7 +48,7 @@ nav {
     max-width:1024px;
     width:100%;
     margin:0px auto;
-    padding: 0px 20px;
+    padding: 0px 30px 0px 40px;
 }
 
 .logo {
@@ -103,6 +105,44 @@ button {
     img {
         padding:0px 0px 0px 5px;
        
+    }
+}
+
+.icon {
+    cursor:pointer;
+    display:none;
+}
+@media (max-width:767px) {
+    nav {
+        padding:10px;
+        
+    }
+    .links {
+        padding-left:0;
+    }
+    li {
+        padding: 0px 5px;
+    }
+    a {
+        font-size: 0.5rem;
+    }
+    .mail, .circle {
+        display:none;
+    }
+    button {
+        font-size: 0.6rem;
+        margin-top:5px;
+    }
+    img {
+        width:20%;
+    }
+    
+   
+
+}
+@media (min-width:768px) and (orientation:portrait) {
+    .links {
+        padding:0;
     }
 }
 `

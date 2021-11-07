@@ -24,17 +24,20 @@ const Tweets = () => {
     }, [])
 
     return (
-        <Wrapper>
-            {tweets.length && tweets.map(tweet => (
+        <>
+            <h2 className="tweets-heading">Latest Tweets</h2>
+            <Wrapper>
+            {!!tweets.length && tweets.map(tweet => (
                 <Tweet key={tweet.id} text={tweet.text}/>
             ))}
-        </Wrapper>
+            </Wrapper>
+        </>
     );
 }
 
 const Wrapper = styled.div `
   background: #f60051ad;  
-  width:420px;
+  max-width:420px;
   height: 500px;
   padding: 10px;
   overflow-y: auto;
@@ -54,6 +57,13 @@ const Wrapper = styled.div `
     height: 50%;
     background: #bbaeb0;
 }
+@media (max-width: 767px) and (orientation:landscape) {
+    max-width:500px;
+}
+@media (min-width:768px) and (orientation:portrait) {
+    max-width:620px;
+}
+
 
 `
 
