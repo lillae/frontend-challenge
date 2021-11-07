@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import stats from '../img/stats.PNG';
 import downArrow from '../img/down-arrow.png';
+import instaGrey from '../img/insta_grey.svg';
 
 const Stats = () => {
     return (
@@ -19,10 +20,37 @@ const Stats = () => {
                     </div>
                     <img src={stats} alt="stats" />
                     <div className="card-buttons">
-                        <button><span>123</span> <br /> posts</button>
-                        <button><span>5789</span><br />likes</button>
-                        <button><span>34567</span><br />snaps</button>
-                        <button><span>5789</span><br />opens</button>
+                        <div className="buttons">
+                            <span>123</span> 
+                              <div className="posts">
+                                <img src={instaGrey} alt="instagram icon" />
+                                <p>posts</p>
+                               </div>
+                        </div>
+                        <div className="buttons">
+                            <span>5 789</span> 
+                              <div className="posts">
+                                <img src={instaGrey} alt="instagram icon" />
+                                <p>likes</p>
+                               </div>
+                        </div>
+                        <div className="buttons">
+                            <span>34 567</span> 
+                              <div className="posts">
+                                <img src={instaGrey} alt="instagram icon" />
+                                <p>snaps</p>
+                               </div>
+                        </div>
+                        <div className="buttons">
+                            <span>5 789</span> 
+                              <div className="posts">
+                                <img src={instaGrey} alt="instagram icon" />
+                                <p>opens</p>
+                               </div>
+                        </div>
+                        {/* <button><span>5789</span><br /><img src={instaGrey} alt="instagram icon" />likes</button>
+                        <button><span>34567</span><br /><img src={instaGrey} alt="instagram icon" />snaps</button>
+                        <button><span>5789</span><br /><img src={instaGrey} alt="instagram icon" />opens</button> */}
                     </div>
                 </div>
              
@@ -118,7 +146,8 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top:5px;
-    button {
+    
+    .buttons {
         margin: 0px 6px 10px 0px;
         width:124px;
         height:55px;
@@ -126,8 +155,15 @@ img {
         border: 1px solid var(--lightestGrey);
         border-radius: 5px;
         font-weight:bold;
-        color: var(--lightestGrey);
         font-size:0.5rem;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        cursor:pointer;
+        p {
+            color: var(--lightestGrey);
+        }
         span {
             color:var(--pink);
             font-size:1.125rem;
@@ -138,8 +174,20 @@ img {
             border: 1px solid transparent;
             transition: color 100ms ease;
         }
+        &:hover p {
+            color:white;
+        }
         &:hover span {
             color:white;
+        }
+       
+        img {
+            max-width:10px;
+            padding-top:3px;
+            margin-right:2px;
+        }
+        .posts {
+            display:flex;
         }
     }
 }

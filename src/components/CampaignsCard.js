@@ -2,12 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import camp1 from '../img/camp1.svg';
 import camp2 from '../img/camp2.svg';
+import notification from '../img/notification.svg';
+
+
 
 const CampaignsCard = () => {
     return (
         <Wrapper>
            <StyledCard>
-            <img src={camp1} alt="nike shoes" />
+            <div className="images">
+            <img className="picture" src={camp1} alt="nike shoes" />
+            <img className="notification" src={notification} alt="notification icon" />
+            </div>
             <div className="content">
             <div className='details'>
                 <div className='active'>
@@ -68,7 +74,18 @@ box-shadow: 0 2px 4px #d3d3d3;
 img {
     max-width:100%;
 }
+.images {
+    width:120px;
+    height:100%;
+    display:flex;
+    position:relative;
+    .notification {
+        position:absolute;
+        right:-10px;
+        top:14px;
+    }
 
+}
 .content {
     width:100%;
     display:flex;

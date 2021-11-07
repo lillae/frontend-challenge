@@ -6,6 +6,7 @@ import arrow from '../img/arrow-down-sign-to-navigate.png';
 import blackCircle from '../img/blackIcon.svg';
 import { GoThreeBars } from "react-icons/go";
 
+
 const Header = () => {
     return (
         <StyledHeader>
@@ -82,14 +83,31 @@ a {
 .profile {
     display: flex;
     align-items: center;
+    position:relative;
     img {
         cursor:pointer;
     }
     .mail {
         padding-right:10px;
     }
+   
     & img:nth-of-type(2) {
     padding-right:5px;
+    }
+    &:after {
+            content: "2";
+            position: absolute;
+            width:12px;
+            height:12px;
+            color: var(--pink);
+            background-color: white;
+            border: 1px solid var(--lightestGrey);
+            border-radius: 50%;
+            top:15px;
+            right:120px;
+            font-size:0.6rem;
+            text-align:center;
+            font-family:'Lato', sans-serif;
     }
 }
 
@@ -126,9 +144,12 @@ button {
     a {
         font-size: 0.5rem;
     }
-    .mail, .circle {
+    .mail, .circle, .profile:after {
         display:none;
     }
+
+ 
+
     button {
         font-size: 0.6rem;
         margin-top:5px;
@@ -137,8 +158,6 @@ button {
         width:20%;
     }
     
-   
-
 }
 @media (min-width:768px) and (orientation:portrait) {
     .links {

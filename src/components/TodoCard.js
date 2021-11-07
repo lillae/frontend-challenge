@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import girl1 from '../img/girl1.PNG';
 import girl2 from '../img/girl2.PNG';
 import girl3 from '../img/girl3.PNG';
+import instaGrey from '../img/insta_grey.svg';
 
 const Todocard = () => {
     return (
@@ -14,7 +15,10 @@ const Todocard = () => {
             <div className="card-content">
                 <img src={girl1} alt="girl" />
                  <div className="text-content">
-                     <small>02.07.1016</small>
+                     <div className="date">
+                         <img src={instaGrey} alt="instagram" />
+                         <small>02.07.1016</small>
+                     </div>
                      <p><span>Who sasy you can't be elegant in sneakers?! :)</span> #nike #sneakers #morningoutfit #liveyourlife #fashion #dailyfashion #fashionista</p>
                  </div>
             </div>
@@ -54,7 +58,10 @@ const Todocard = () => {
             <div className="card-content">
                 <img src={girl3} alt="girl" />
                  <div className="text-content">
-                     <small>02.07.1016</small>
+                    <div className="date">
+                         <img src={instaGrey} alt="instagram" />
+                         <small>02.07.1016</small>
+                     </div>
                      <p><span>My new yoga pants from Nike has arrived, I adore it!</span> #nike #yoga #sun  #namaste #liveyourlife #fashion #dailyfashion #sport #sporty #nature</p>
                  </div>
             </div>
@@ -107,6 +114,11 @@ padding: 0px 0px 10px;
     .text-content {
         padding:0 10px;
         margin: 0px auto;
+     .date {
+         img {
+             margin:5px 3px 0px 0px;
+         }
+     }
     }
 }
 

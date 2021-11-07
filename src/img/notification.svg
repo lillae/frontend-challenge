@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="31px" height="30px" viewBox="0 0 31 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.30980393 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+  </defs>
+  <g id="NOTI" transform="translate(0.5 0.5)">
+    <path d="M14.5023 25C21.4069 25 27.0043 19.4036 27.0043 12.5C27.0043 5.59644 21.4069 0 14.5023 0C7.59764 0 2.00032 5.59644 2.00032 12.5C2.00032 19.4036 7.59764 25 14.5023 25Z" id="Oval-56" fill="#F60051" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+    <path d="M17.7594 11.5153C16.361 8.50672 15.6342 7.36422 13.3492 7.41143C12.5354 7.42823 12.7309 6.82222 12.1105 7.05214C11.4905 7.28218 12.0225 7.61867 11.3882 8.13897C9.60827 9.59968 9.77237 10.9511 10.5978 14.172C10.9458 15.5285 9.75937 15.5951 10.2289 16.9102C10.5714 17.869 13.0979 18.2705 15.7634 17.2815C18.429 16.2928 20.1116 14.33 19.769 13.3711C19.2994 12.056 18.3487 12.7821 17.7594 11.5153L17.7594 11.5153ZM15.4741 16.4714C13.0936 17.3545 11.137 16.8349 11.0544 16.6042C10.9119 16.2059 11.8229 14.8775 14.5445 13.8677C17.2663 12.858 18.785 13.2323 18.9439 13.6772C19.0378 13.9399 17.8549 15.5882 15.4741 16.4714L15.4741 16.4714ZM14.7091 14.3286C13.4645 14.7904 12.5995 15.3186 12.0398 15.7941C12.4336 16.1519 13.1718 16.2392 13.9077 15.9663C14.8443 15.6189 15.4194 14.8213 15.1919 14.185C15.1893 14.1773 15.1852 14.1704 15.1824 14.1628C15.0288 14.2136 14.8712 14.2685 14.7091 14.3286L14.7091 14.3286Z" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
