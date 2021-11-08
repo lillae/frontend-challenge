@@ -93,6 +93,9 @@ img {
         position:absolute;
         right:-10px;
         top:14px;
+    @media (max-width:830px) {
+        right:10px;
+    }
     }
     .mini-icons {
         background:white;
